@@ -33,9 +33,9 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "3.0-dev"
+            "dev-master": "0.0-dev"
         },
-        "Laravel": {
+        "Hyhc": {
             "providers": [
                 "Hyhc\\Socialite\\SocialiteServiceProvider"
             ],
