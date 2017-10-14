@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Laravel\\Socialite\\": "src/"
+            "Hyhc\\Socialite\\": "src/"
         }
     },
     "autoload-dev": {
@@ -35,7 +35,7 @@
         "branch-alias": {
             "dev-master": "3.0-dev"
         },
-        "laravel": {
+        "Hyhc": {
             "providers": [
                 "Hyhc\\Socialite\\SocialiteServiceProvider"
             ],
