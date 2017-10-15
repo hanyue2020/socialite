@@ -12,7 +12,7 @@ use Hyhc\Socialite\Two\FacebookProvider;
 use Hyhc\Socialite\Two\LinkedInProvider;
 use Hyhc\Socialite\Two\BitbucketProvider;
 use League\OAuth1\Client\Server\Twitter as TwitterServer;
-
+use Illuminate\Support\Str;
 class SocialiteManager extends Manager implements Contracts\Factory
 {
     /**

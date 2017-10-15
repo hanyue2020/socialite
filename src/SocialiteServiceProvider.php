@@ -35,4 +35,14 @@ class SocialiteServiceProvider extends ServiceProvider
     {
         return [Factory::class];
     }
+
+    /**
+     * Bootstrap the application services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        //
+    }
 }
