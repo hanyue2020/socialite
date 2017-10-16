@@ -127,6 +127,28 @@ class SocialiteManager extends Manager implements Contracts\Factory
     }
 
     /**
+     * Create an instance of the specified driver.
+     *
+     * @return \Hyhc\Socialite\One\AbstractProvider
+     */
+    protected function createMobileTwitterDriver()
+    {
+        $config = $this->app['config']['services.twitter'];
+
+        return new TwitterProvider(
+            $this->app['request'], new TwitterServer($this->formatConfig($config))
+        );
+    }
+
+    protected function createMobileTwitter1Driver()
+    {
+        $config = $this->app['config']['services.twitter1'];
+
+        return new TwitterProvider(
+            $this->app['request'], new TwitterServer($this->formatConfig($config))
+        );
+    }
+    /**
      * Format the server configuration.
      *
      * @param  array  $config
